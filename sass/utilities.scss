@@ -1,0 +1,151 @@
+@import 'variables';
+@import 'mixins';
+/*******************
+  Layout
+********************/
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline;
+}
+.flex {
+	display: flex;
+}
+.inline-flex{
+	display: inline-flex
+}
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flex-row {
+	flex-direction: row;
+}
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+.flex-column {
+	flex-direction: column;
+}
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+.flex-start {
+	justify-content: flex-start;
+}
+.flex-center {
+	justify-content: center;
+}
+.flex-end {
+	justify-content: flex-end;
+}
+.space-around {
+	justify-content: space-around;
+}
+.space-between {
+	justify-content: space-between;
+}
+.align-start {
+	align-items: flex-start;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+.grid {
+	display: grid;
+}
+.relative {
+	position: relative;
+}
+/*******************
+  Accessibility
+********************/
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/*******************
+  Text 
+********************/
+.bold {
+	font-weight: bold; 
+}
+.italic {
+	font-style: italic;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+@include helper('font-size', 'txt-', $text-sizes);
+@include helper('font-weight', 'fw-', $font-weights);
+@include helper('line-height', 'lh-', $line-heights);
+
+/*******************
+  Colors
+********************/
+.white {
+	color: #fff;
+}
+@include helper('color', '', $greys );
+@include helper('background-color', 'bg-', $greys );
+@include helper('color', '', $reds );
+@include helper('background-color', 'bg-', $reds );
+@include helper('color', '', $yellows );
+@include helper('background-color', 'bg-', $yellows );
+@include helper('color', '', $greens );
+@include helper('background-color', 'bg-', $greens );
+@include helper('color', '', $blues );
+@include helper('background-color', 'bg-', $blues );
+@include helper('color', '', $indigos );
+@include helper('background-color', 'bg-', $indigos );
+@include helper('color', '', $purples );
+@include helper('background-color', 'bg-', $purples );
+@include helper('color', '', $pinks );
+@include helper('background-color', 'bg-', $pinks );
+
+/*******************
+  Spacing
+********************/
+@include spacing-helper('padding', 'p', $paddings);
+@include spacing-helper('margin', 'm', $margins);
+
+/*******************
+  Sizing
+********************/
+.h-100 {
+	height: 100%;
+}
+.w-100 {
+	width: 100%;
+}
+@include helper('max-width', 'maxw-', $widths);
+@include helper('min-width', 'minw-', $widths);

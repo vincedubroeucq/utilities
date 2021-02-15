@@ -1,0 +1,153 @@
+$grey-9: #111827;
+$grey-8: #1F2937;
+$grey-7: #374151; 
+$grey-6: #4B5563; 
+$grey-5: #6B7280;
+$grey-4: #9CA3AF;
+$grey-3: #D1D5DB;
+$grey-2: #E5E7EB;
+$grey-1: #F3F4F6;
+$grey-0: #F9FAFB;
+
+$red-9: #7F1D1D;
+$red-8: #991B1B;
+$red-7: #B91C1C;
+$red-6: #DC2626;
+$red-5: #EF4444;
+$red-4: #F87171;
+$red-3: #FCA5A5;
+$red-2: #FECACA;
+$red-1: #FEE2E2;
+$red-0: #FEF2F2;
+
+$yellow-9: #78350F;
+$yellow-8: #92400E;
+$yellow-7: #B45309;
+$yellow-6: #D97706;
+$yellow-5: #F59E0B;
+$yellow-4: #FBBF24;
+$yellow-3: #FCD34D;
+$yellow-2: #FDE68A;
+$yellow-1: #FEF3C7;
+$yellow-0: #FFFBEB;
+
+$green-9: #064E3B;
+$green-8: #065F46;
+$green-7: #047857;
+$green-6: #059669;
+$green-5: #10B981;
+$green-4: #34D399;
+$green-3: #6EE7B7;
+$green-2: #A7F3D0;
+$green-1: #D1FAE5;
+$green-0: #ECFDF5;
+
+$blue-9: #1E3A8A;
+$blue-8: #1E40AF;
+$blue-7: #1D4ED8;
+$blue-6: #2563EB;
+$blue-5: #3B82F6;
+$blue-4: #60A5FA;
+$blue-3: #93C5FD;
+$blue-2: #BFDBFE;
+$blue-1: #DBEAFE;
+$blue-0: #EFF6FF;
+
+$indigo-9: #312E81;
+$indigo-8: #3730A3;
+$indigo-7: #4338CA;
+$indigo-6: #4F46E5;
+$indigo-5: #6366F1;
+$indigo-4: #818CF8;
+$indigo-3: #A5B4FC;
+$indigo-2: #C7D2FE;
+$indigo-1: #E0E7FF;
+$indigo-0: #EEF2FF;
+
+$purple-9: #4C1D95;
+$purple-8: #5B21B6;
+$purple-7: #6D28D9;
+$purple-6: #7C3AED;
+$purple-5: #8B5CF6;
+$purple-4: #A78BFA;
+$purple-3: #C4B5FD;
+$purple-2: #DDD6FE;
+$purple-1: #EDE9FE;
+$purple-0: #F5F3FF;
+
+$pink-9: #831843;
+$pink-8: #9D174D;
+$pink-7: #BE185D;
+$pink-6: #DB2777;
+$pink-5: #EC4899;
+$pink-4: #F472B6;
+$pink-3: #F9A8D4;
+$pink-2: #FBCFE8;
+$pink-1: #FCE7F3;
+$pink-0: #FDF2F8;
+
+$xs:  375px;
+$sm:  576px;
+$md:  650px;
+$mlg: 768px;
+$lg:  1024px;
+$xl:  1280px;
+$xxl: 1600px;
+
+$txt-1:  .625rem;  // 10px
+$txt-2:  .75rem;   // 12px
+$txt-3:  .875rem;  // 14px
+$txt-4:  1rem;     // 16px
+$txt-5:  1.125rem; // 18px
+$txt-6:  1.25rem;  // 20px
+$txt-7:  1.5rem;   // 24px
+$txt-8:  1.75rem;  // 28px
+$txt-9:  2rem;     // 32px
+$txt-10: 3rem;     // 48px
+
+$lh-1: 1;
+$lh-2: 1.2;
+$lh-3: 1.5;
+$lh-4: 1.75;
+$lh-5: 2;
+
+$fw-1: 100;
+$fw-2: 200;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-8: 800;
+$fw-9: 900;
+
+$sp-1: .25rem;  // 4px 
+$sp-2: .5rem;   // 8px
+$sp-3:  .75rem; // 12px
+$sp-4:  1rem;   // 16px
+$sp-5:  1.5rem; // 24px
+$sp-6:  2rem;   // 32px
+$sp-7:  3rem;   // 48px  
+$sp-8:  4rem;   // 64px
+$sp-9:  6rem;   // 96px
+
+$font-sans: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+$font-serif : 'Georgia', 'Cambria', 'Times New Roman', Times, serif;
+$font-mono: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+
+$greys: (grey-1: $grey-1, grey-2: $grey-2, grey-3: $grey-3, grey-4: $grey-4, grey-5: $grey-5, grey-6: $grey-6, grey-7: $grey-7, grey-8: $grey-8, grey-9: $grey-9);
+$reds: (red-1: $red-1, red-2: $red-2, red-3: $red-3, red-4: $red-4, red-5: $red-5, red-6: $red-6, red-7: $red-7, red-8: $red-8, red-9: $red-9);
+$yellows: (yellow-1: $yellow-1, yellow-2: $yellow-2, yellow-3: $yellow-3, yellow-4: $yellow-4, yellow-5: $yellow-5, yellow-6: $yellow-6, yellow-7: $yellow-7, yellow-8: $yellow-8, yellow-9: $yellow-9);
+$greens: (green-1: $green-1, green-2: $green-2, green-3: $green-3, green-4: $green-4, green-5: $green-5, green-6: $green-6, green-7: $green-7, green-8: $green-8, green-9: $green-9);
+$blues: (blue-1: $blue-1, blue-2: $blue-2, blue-3: $blue-3, blue-4: $blue-4, blue-5: $blue-5, blue-6: $blue-6, blue-7: $blue-7, blue-8: $blue-8, blue-9: $blue-9);
+$indigos: (indigo-1: $indigo-1, indigo-2: $indigo-2, indigo-3: $indigo-3, indigo-4: $indigo-4, indigo-5: $indigo-5, indigo-6: $indigo-6, indigo-7: $indigo-7, indigo-8: $indigo-8, indigo-9: $indigo-9);
+$purples: (purple-1: $purple-1, purple-2: $purple-2, purple-3: $purple-3, purple-4: $purple-4, purple-5: $purple-5, purple-6: $purple-6, purple-7: $purple-7, purple-8: $purple-8, purple-9: $purple-9);
+$pinks: (pink-1: $pink-1, pink-2: $pink-2, pink-3: $pink-3, pink-4: $pink-4, pink-5: $pink-5, pink-6: $pink-6, pink-7: $pink-7, pink-8: $pink-8, pink-9: $pink-9);
+
+$widths: (xs: $xs, sm:$sm, md:$md, mlg:$mlg, lg:$lg, xl:$xl, xxl:$xxl);
+$line-heights: (1: $lh-1, 2: $lh-2, 3: $lh-3, 4: $lh-4, 5: $lh-5);
+$text-sizes: (1: $txt-1, 2: $txt-2, 3: $txt-3, 4: $txt-4, 5: $txt-5, 6: $txt-6, 7: $txt-7, 8: $txt-8, 9: $txt-9, 10: $txt-10);
+$font-weights: (1: $fw-1, 2: $fw-2, 3: $fw-3, 4: $fw-4, 5: $fw-5, 6: $fw-6, 7: $fw-7, 8: $fw-8, 9: $fw-9 );
+$margins: (0: 0, 1: $sp-1, 2: $sp-2, 3: $sp-2, 4: $sp-4, 5: $sp-5, 6: $sp-6, 7: $sp-7, 8: $sp-8, 9: $sp-9, auto: auto);
+$paddings: (0: 0, 1: $sp-1, 2: $sp-2, 3: $sp-2, 4: $sp-4, 5: $sp-5, 6: $sp-6, 7: $sp-7, 8: $sp-8, 9: $sp-9);
+$breakpoints: (xs: $xs, sm: $sm, md: $md, mlg: $mlg, lg: $lg, xl: $xl, xxl: $xxl);
