@@ -42,7 +42,7 @@ $green-2: #A7F3D0;
 $green-1: #D1FAE5;
 $green-0: #ECFDF5;
 
-$blue-9: #1E3A8A;
+$blue-9: #1e3a8a;
 $blue-8: #1E40AF;
 $blue-7: #1D4ED8;
 $blue-6: #2563EB;
@@ -105,11 +105,11 @@ $txt-8: 1.75rem; // 28px
 $txt-9: 2rem; // 32px
 $txt-10: 3rem; // 48px
 
+$lh-0: 0;
 $lh-1: 1;
-$lh-2: 1.2;
-$lh-3: 1.5;
-$lh-4: 1.75;
-$lh-5: 2;
+$lh-s: 1.2;
+$lh-m: 1.5;
+$lh-l: 1.75;
 
 $sp-1: .25rem; // 4px 
 $sp-2: .5rem; // 8px
@@ -213,7 +213,6 @@ $pinks: (
     pink-8: $pink-8,
     pink-9: $pink-9
 );
-
 $widths: (
     xs: $xs,
     sm: $sm,
@@ -224,11 +223,11 @@ $widths: (
     xxl: $xxl
 );
 $line-heights: (
+    0: $lh-0,
     1: $lh-1,
-    2: $lh-2,
-    3: $lh-3,
-    4: $lh-4,
-    5: $lh-5
+    s: $lh-s,
+    m: $lh-m,
+    l: $lh-l
 );
 $text-sizes: (
     1: $txt-1,

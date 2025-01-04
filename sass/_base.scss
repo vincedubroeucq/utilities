@@ -1,3 +1,30 @@
+// TODO: Choose and tweak better base colors
+// TODO: Tweak dark mode colors
+:root {
+    --color-background: #{$grey-0};
+    --color-brand: #{$blue-7};
+    --color-brand-dark: #{$blue-8};
+    --color-brand-light: #{$blue-6};
+    --color-text-strong: #{$grey-9};
+    --color-text-weak: #{$grey-8};
+    --color-stroke-strong: #{$grey-6};
+    --color-stroke-weak: #{$grey-4};
+    --color-fill: #{$grey-1};
+
+    .dark {
+        --color-background: #{$blue-9};
+        --color-brand: #{$blue-7};
+        --color-brand-dark: #{$blue-8};
+        --color-brand-light: #{$blue-6};
+        --color-text-strong: #{$grey-9};
+        --color-text-weak: #{$grey-8};
+        --color-stroke-strong: #{$grey-6};
+        --color-stroke-weak: #{$grey-4};
+        --color-fill: #{$grey-1};
+    }
+}
+
+
 /**********************
   HTML element styles 
 **********************/
@@ -6,12 +33,12 @@ html {
 }
 
 body {
-    background: white;
+    background-color: var(--color-background);
     font-family: $font-sans;
-    color: $grey-8;
+    color: var(--color-text-weak);
     text-rendering: optimizeLegibility;
     font-size: $txt-3;
-    line-height: $lh-3;
+    line-height: $lh-m;
 
     @media screen and (min-width: $mlg) {
         font-size: $txt-4;
@@ -25,8 +52,8 @@ h4,
 h5,
 h6 {
     clear: both;
-    color: $grey-9;
-    line-height: $lh-2;
+    color: var(--color-text-strong);
+    line-height: $lh-s;
 }
 
 h1,
@@ -116,7 +143,7 @@ address {
 
 pre {
     font-family: $font-mono;
-    line-height: $lh-2;
+    line-height: $lh-s;
     margin-bottom: $sp-4;
     max-width: 100%;
     overflow: auto;
@@ -132,18 +159,18 @@ var {
 
 abbr,
 acronym {
-    border-bottom: 1px dotted $grey-4;
+    border-bottom: 1px dotted var(--color-stroke-strong);
     cursor: help;
 }
 
 mark,
 ins {
-    background: $grey-1;
+    background: var(--color-fill);
     text-decoration: none;
 }
 
 hr {
-    background-color: $grey-3;
+    background-color: var(--color-stroke-weak);
     border: 0;
     height: 1px;
     margin: $sp-4 0;
@@ -174,17 +201,17 @@ svg {
 }
 
 a {
-    color: $blue-5;
+    color: var(--color-brand);
     transition: all .25s ease-in-out;
 
     &:hover,
     &:focus,
     &:active {
-        color: $blue-4;
+        color: var(--color-brand-light);
     }
 
     &:focus {
-        outline: thin dotted $blue-5;
+        outline: thin dotted var(--color-brand);
     }
 
     &:hover,
@@ -198,7 +225,7 @@ a {
         &:hover,
         &:focus,
         &:active {
-            color: $blue-4;
+            color: var(--color-brand-light);
         }
     }
 }
