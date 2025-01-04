@@ -1,6 +1,5 @@
 // TODO: Choose and tweak better base colors
 // TODO: Tweak dark mode colors
-// TODO: Change helpers classnames to brand, text-strong, text-weak, stroke-strong, stroke-weak, fill
 :root {
     --color-background: #{$grey-0};
 
@@ -9,8 +8,8 @@
     --color-brand-light: #{$blue-6};
 
     --color-text-strong: #{$grey-9};
-    --color-text-weak: #{$grey-8};
-    --color-stroke-strong: #{$grey-6};
+    --color-text-weak: #{$grey-7};
+    --color-stroke-strong: #{$grey-5};
     --color-stroke-weak: #{$grey-4};
     --color-fill: #{$grey-1};
 
@@ -60,7 +59,7 @@ body {
     font-size: $txt-3;
     line-height: $lh-m;
 
-    @media screen and (min-width: $mlg) {
+    @media screen and (min-width: $md) {
         font-size: $txt-4;
     }
 }
@@ -82,7 +81,7 @@ h1,
 .h1 {
     font-size: $txt-8;
 
-    @media screen and (min-width: $mlg) {
+    @media screen and (min-width: $md) {
         font-size: $txt-9;
     }
 
@@ -95,7 +94,7 @@ h2,
 .h2 {
     font-size: $txt-6;
 
-    @media screen and (min-width: $mlg) {
+    @media screen and (min-width: $md) {
         font-size: $txt-7;
     }
 
@@ -108,7 +107,7 @@ h3,
 .h3 {
     font-size: $txt-5;
 
-    @media screen and (min-width: $mlg) {
+    @media screen and (min-width: $md) {
         font-size: $txt-6;
     }
 
@@ -121,7 +120,7 @@ h4,
 .h4 {
     font-size: $txt-4;
 
-    @media screen and (min-width: $mlg) {
+    @media screen and (min-width: $md) {
         font-size: $txt-5;
     }
 

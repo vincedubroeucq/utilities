@@ -153,16 +153,8 @@
 	color: #fff;
 }
 
-@include helper('color', '', $greys );
-@include helper('background-color', 'bg-', $greys );
-@include helper('color', '', $blues );
-@include helper('background-color', 'bg-', $blues );
-@include helper('color', '', $reds );
-@include helper('background-color', 'bg-', $reds );
-@include helper('color', '', $greens );
-@include helper('background-color', 'bg-', $greens );
-@include helper('color', '', $ambers );
-@include helper('background-color', 'bg-', $ambers );
+@include helper('color', '', $colors );
+@include helper('background-color', 'bg-', $colors );
 
 /*******************
   Spacing

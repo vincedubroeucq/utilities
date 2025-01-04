@@ -60,11 +60,11 @@ $amber-0: #fffbeb;
 
 $xs: 375px;
 $sm: 576px;
-$md: 650px;
-$mlg: 768px;
+$md: 768px;
 $lg: 1024px;
 $xl: 1280px;
 $xxl: 1600px;
+$content: 650px;
 
 $txt-1: .625rem; // 10px
 $txt-2: .75rem; // 12px
@@ -105,7 +105,8 @@ $greys: (
     grey-6: $grey-6,
     grey-7: $grey-7,
     grey-8: $grey-8,
-    grey-9: $grey-9
+    grey-9: $grey-9,
+    grey-10: $grey-10,
 );
 $blues: (
     blue-1: $blue-1,
@@ -116,7 +117,8 @@ $blues: (
     blue-6: $blue-6,
     blue-7: $blue-7,
     blue-8: $blue-8,
-    blue-9: $blue-9
+    blue-9: $blue-9,
+    blue-10: $blue-10,
 );
 $reds: (
     red-1: $red-1,
@@ -127,7 +129,8 @@ $reds: (
     red-6: $red-6,
     red-7: $red-7,
     red-8: $red-8,
-    red-9: $red-9
+    red-9: $red-9,
+    red-10: $red-10,
 );
 $greens: (
     green-1: $green-1,
@@ -138,7 +141,8 @@ $greens: (
     green-6: $green-6,
     green-7: $green-7,
     green-8: $green-8,
-    green-9: $green-9
+    green-9: $green-9,
+    green-10: $green-10,
 );
 $ambers: (
     amber-1: $amber-1,
@@ -149,16 +153,46 @@ $ambers: (
     amber-6: $amber-6,
     amber-7: $amber-7,
     amber-8: $amber-8,
-    amber-9: $amber-9
+    amber-9: $amber-9,
+    amber-10: $amber-10,
+);
+$colors: (
+    brand: var(--color-brand),
+    brand-light: var(--color-brand-light),
+    brand-dark: var(--color-brand-dark),
+
+    text-strong: var(--color-text-strong),
+    text-weak: var(--color-text-weak),
+    stroke-strong: var(--color-stroke-strong),
+    stroke-weak: var(--color-stroke-weak),
+    fill: var(--color-fill),
+
+    success-text-strong: var(--color-success-text-strong),
+    success-text-weak: var(--color-success-text-weak),
+    success-stroke-strong: var(--color-success-stroke-strong),
+    success-stroke-weak: var(--color-success-stroke-weak),
+    success-fill: var(--color-success-fill),
+
+    warning-text-strong: var(--color-warning-text-strong),
+    warning-text-weak: var(--color-warning-text-weak),
+    warning-stroke-strong: var(--color-warning-stroke-strong),
+    warning-stroke-weak: var(--color-warning-stroke-weak),
+    warning-fill: var(--color-warning-fill),
+
+    error-text-strong: var(--color-error-text-strong),
+    error-text-weak: var(--color-error-text-weak),
+    error-stroke-strong: var(--color-error-stroke-strong),
+    error-stroke-weak: var(--color-error-stroke-weak),
+    error-fill: var(--color-error-fill),
 );
 $widths: (
     xs: $xs,
     sm: $sm,
     md: $md,
-    mlg: $mlg,
     lg: $lg,
     xl: $xl,
-    xxl: $xxl
+    xxl: $xxl,
+    content: $content,
 );
 $line-heights: (
     0: $lh-0,
@@ -204,7 +238,6 @@ $breakpoints: (
     xs: $xs,
     sm: $sm,
     md: $md,
-    mlg: $mlg,
     lg: $lg,
     xl: $xl,
     xxl: $xxl
