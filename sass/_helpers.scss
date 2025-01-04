@@ -155,20 +155,14 @@
 
 @include helper('color', '', $greys );
 @include helper('background-color', 'bg-', $greys );
-@include helper('color', '', $reds );
-@include helper('background-color', 'bg-', $reds );
-@include helper('color', '', $yellows );
-@include helper('background-color', 'bg-', $yellows );
-@include helper('color', '', $greens );
-@include helper('background-color', 'bg-', $greens );
 @include helper('color', '', $blues );
 @include helper('background-color', 'bg-', $blues );
-@include helper('color', '', $indigos );
-@include helper('background-color', 'bg-', $indigos );
-@include helper('color', '', $purples );
-@include helper('background-color', 'bg-', $purples );
-@include helper('color', '', $pinks );
-@include helper('background-color', 'bg-', $pinks );
+@include helper('color', '', $reds );
+@include helper('background-color', 'bg-', $reds );
+@include helper('color', '', $greens );
+@include helper('background-color', 'bg-', $greens );
+@include helper('color', '', $ambers );
+@include helper('background-color', 'bg-', $ambers );
 
 /*******************
   Spacing

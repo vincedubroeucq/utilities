@@ -1,15 +1,36 @@
 // TODO: Choose and tweak better base colors
 // TODO: Tweak dark mode colors
+// TODO: Change helpers classnames to brand, text-strong, text-weak, stroke-strong, stroke-weak, fill
 :root {
     --color-background: #{$grey-0};
+
     --color-brand: #{$blue-7};
     --color-brand-dark: #{$blue-8};
     --color-brand-light: #{$blue-6};
+
     --color-text-strong: #{$grey-9};
     --color-text-weak: #{$grey-8};
     --color-stroke-strong: #{$grey-6};
     --color-stroke-weak: #{$grey-4};
     --color-fill: #{$grey-1};
+
+    --color-success-text-strong: #{$green-9};
+    --color-success-text-weak: #{$green-8};
+    --color-success-stroke-strong: #{$green-6};
+    --color-success-stroke-weak: #{$green-4};
+    --color-success-fill: #{$green-1};
+
+    --color-warning-text-strong: #{$amber-9};
+    --color-warning-text-weak: #{$amber-8};
+    --color-warning-stroke-strong: #{$amber-6};
+    --color-warning-stroke-weak: #{$amber-4};
+    --color-warning-fill: #{$amber-1};
+
+    --color-error-text-strong: #{$red-9};
+    --color-error-text-weak: #{$red-8};
+    --color-error-stroke-strong: #{$red-6};
+    --color-error-stroke-weak: #{$red-4};
+    --color-error-fill: #{$red-1};
 
     .dark {
         --color-background: #{$blue-9};
