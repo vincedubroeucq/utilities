@@ -24,7 +24,6 @@
     }
 }
 
-
 /**********************
   HTML element styles 
 **********************/
@@ -54,6 +53,8 @@ h6 {
     clear: both;
     color: var(--color-text-strong);
     line-height: $lh-s;
+    margin-bottom: $sp-s;
+    margin-top: 1.5em;
 }
 
 h1,
@@ -124,13 +125,13 @@ h6,
 
 p {
     margin-top: 0;
-    margin-bottom: $sp-4;
+    margin-bottom: $sp-m;
 }
 
 blockquote {
     border-left: 4px solid $grey-5;
-    padding: $sp-4;
-    margin: $sp-4 0;
+    padding: $sp-m;
+    margin: $sp-m 0;
 
     cite {
         text-align: right;
@@ -138,16 +139,16 @@ blockquote {
 }
 
 address {
-    margin-bottom: $sp-4;
+    margin-bottom: $sp-m;
 }
 
 pre {
     font-family: $font-mono;
     line-height: $lh-s;
-    margin-bottom: $sp-4;
+    margin-bottom: $sp-m;
     max-width: 100%;
     overflow: auto;
-    padding: $sp-4;
+    padding: $sp-m;
 }
 
 code,
@@ -173,13 +174,13 @@ hr {
     background-color: var(--color-stroke-weak);
     border: 0;
     height: 1px;
-    margin: $sp-4 0;
+    margin: $sp-m 0;
 }
 
 ul,
 ol {
-    margin: $sp-4 0;
-    padding-left: $sp-6;
+    margin: $sp-m 0;
+    padding-left: $sp-l;
 }
 
 embed,
@@ -188,7 +189,7 @@ object,
 video {
     display: block;
     max-width: 100%;
-    margin: $sp-6 auto;
+    margin: $sp-l auto;
 }
 
 img {

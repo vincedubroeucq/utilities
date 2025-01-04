@@ -111,15 +111,13 @@ $lh-s: 1.2;
 $lh-m: 1.5;
 $lh-l: 1.75;
 
-$sp-1: .25rem; // 4px 
-$sp-2: .5rem; // 8px
-$sp-3: .75rem; // 12px
-$sp-4: 1rem; // 16px
-$sp-5: 1.5rem; // 24px
-$sp-6: 2rem; // 32px
-$sp-7: 3rem; // 48px  
-$sp-8: 4rem; // 64px
-$sp-9: 6rem; // 96px
+$sp-xxs: .25rem; // 4px 
+$sp-xs: .5rem; // 8px
+$sp-s: 1rem; // 16px
+$sp-m: 1.5rem; // 24px
+$sp-l: 2rem; // 32px
+$sp-xl: 3rem; // 48px  
+$sp-xxl: 5rem; // 80px
 
 $font-sans: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
 $font-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif';
@@ -243,28 +241,24 @@ $text-sizes: (
 );
 $margins: (
     0: 0,
-    1: $sp-1,
-    2: $sp-2,
-    3: $sp-2,
-    4: $sp-4,
-    5: $sp-5,
-    6: $sp-6,
-    7: $sp-7,
-    8: $sp-8,
-    9: $sp-9,
-    auto: auto
+    xxs: $sp-xxs,
+    xs: $sp-xs,
+    s: $sp-s,
+    m: $sp-m,
+    l: $sp-l,
+    xl: $sp-xl,
+    xxl: $sp-xxl,
+    auto: auto,
 );
 $paddings: (
     0: 0,
-    1: $sp-1,
-    2: $sp-2,
-    3: $sp-2,
-    4: $sp-4,
-    5: $sp-5,
-    6: $sp-6,
-    7: $sp-7,
-    8: $sp-8,
-    9: $sp-9
+    xxs: $sp-xxs,
+    xs: $sp-xs,
+    s: $sp-s,
+    m: $sp-m,
+    l: $sp-l,
+    xl: $sp-xl,
+    xxl: $sp-xxl,
 );
 $breakpoints: (
     xs: $xs,
