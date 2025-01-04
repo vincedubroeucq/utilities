@@ -1,0 +1,204 @@
+/**********************
+  HTML element styles 
+**********************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    font-family: $font-sans;
+    color: $grey-8;
+    text-rendering: optimizeLegibility;
+    font-size: $txt-3;
+    line-height: $lh-3;
+
+    @media screen and (min-width: $mlg) {
+        font-size: $txt-4;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    color: $grey-9;
+    line-height: $lh-2;
+}
+
+h1,
+.h1 {
+    font-size: $txt-8;
+
+    @media screen and (min-width: $mlg) {
+        font-size: $txt-9;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: $txt-10;
+    }
+}
+
+h2,
+.h2 {
+    font-size: $txt-6;
+
+    @media screen and (min-width: $mlg) {
+        font-size: $txt-7;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: $txt-8;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $txt-5;
+
+    @media screen and (min-width: $mlg) {
+        font-size: $txt-6;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: $txt-7;
+    }
+}
+
+h4,
+.h4 {
+    font-size: $txt-4;
+
+    @media screen and (min-width: $mlg) {
+        font-size: $txt-5;
+    }
+
+    @media screen and (min-width: $lg) {
+        font-size: $txt-6;
+    }
+}
+
+h5,
+.h5 {
+    font-size: $txt-4;
+
+    @media screen and (min-width: $lg) {
+        font-size: $txt-5;
+    }
+}
+
+h6,
+.h6 {
+    font-size: $txt-4;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: $sp-4;
+}
+
+blockquote {
+    border-left: 4px solid $grey-5;
+    padding: $sp-4;
+    margin: $sp-4 0;
+
+    cite {
+        text-align: right;
+    }
+}
+
+address {
+    margin-bottom: $sp-4;
+}
+
+pre {
+    font-family: $font-mono;
+    line-height: $lh-2;
+    margin-bottom: $sp-4;
+    max-width: 100%;
+    overflow: auto;
+    padding: $sp-4;
+}
+
+code,
+kbd,
+tt,
+var {
+    font-family: $font-mono;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted $grey-4;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: $grey-1;
+    text-decoration: none;
+}
+
+hr {
+    background-color: $grey-3;
+    border: 0;
+    height: 1px;
+    margin: $sp-4 0;
+}
+
+ul,
+ol {
+    margin: $sp-4 0;
+    padding-left: $sp-6;
+}
+
+embed,
+iframe,
+object,
+video {
+    display: block;
+    max-width: 100%;
+    margin: $sp-6 auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+svg {
+    fill: currentColor;
+}
+
+a {
+    color: $blue-5;
+    transition: all .25s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $blue-4;
+    }
+
+    &:focus {
+        outline: thin dotted $blue-5;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+
+    &.naked {
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $blue-4;
+        }
+    }
+}
