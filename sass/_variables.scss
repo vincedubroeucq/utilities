@@ -66,16 +66,16 @@ $xl: 1280px;
 $xxl: 1600px;
 $content: 650px;
 
-$txt-1: .625rem; // 10px
-$txt-2: .75rem; // 12px
-$txt-3: .875rem; // 14px
-$txt-4: 1rem; // 16px
-$txt-5: 1.125rem; // 18px
-$txt-6: 1.25rem; // 20px
-$txt-7: 1.5rem; // 24px
-$txt-8: 1.75rem; // 28px
-$txt-9: 2rem; // 32px
-$txt-10: 3rem; // 48px
+$txt-2xs: .625rem; // 10px
+$txt-xs: .75rem; // 12px
+$txt-s: .875rem; // 14px
+$txt-m: 1.0625rem; // 17px
+$txt-l: 1.25rem; // 20px
+$txt-xl: 1.5rem; // 24px
+$txt-2xl: 2rem; // 32px
+$txt-3xl: 2.5rem; // 40px
+$txt-4xl: 3rem; // 48px
+$txt-5xl: 3.75rem; // 60px
 
 $lh-0: 0;
 $lh-1: 1;
@@ -84,13 +84,13 @@ $lh-m: 1.5;
 $lh-l: 1.75;
 $lh-xl: 2;
 
-$sp-xxs: .25rem; // 4px 
+$sp-2xs: .25rem; // 4px 
 $sp-xs: .5rem; // 8px
 $sp-s: 1rem; // 16px
 $sp-m: 1.5rem; // 24px
 $sp-l: 2rem; // 32px
 $sp-xl: 3rem; // 48px  
-$sp-xxl: 5rem; // 80px
+$sp-2xl: 5rem; // 80px
 
 $font-sans: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
 $font-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif';
@@ -202,37 +202,37 @@ $line-heights: (
     l: $lh-l
 );
 $text-sizes: (
-    1: $txt-1,
-    2: $txt-2,
-    3: $txt-3,
-    4: $txt-4,
-    5: $txt-5,
-    6: $txt-6,
-    7: $txt-7,
-    8: $txt-8,
-    9: $txt-9,
-    10: $txt-10
+    2xs: $txt-2xs,
+    xs: $txt-xs,
+    s: $txt-s,
+    m: $txt-m,
+    l: $txt-l,
+    xl: $txt-xl,
+    2xl: $txt-2xl,
+    3xl: $txt-3xl,
+    4xl: $txt-4xl,
+    5xl: $txt-5xl,
 );
 $margins: (
     0: 0,
-    xxs: $sp-xxs,
+    2xs: $sp-2xs,
     xs: $sp-xs,
     s: $sp-s,
     m: $sp-m,
     l: $sp-l,
     xl: $sp-xl,
-    xxl: $sp-xxl,
+    2xl: $sp-2xl,
     auto: auto,
 );
 $paddings: (
     0: 0,
-    xxs: $sp-xxs,
+    2xs: $sp-2xs,
     xs: $sp-xs,
     s: $sp-s,
     m: $sp-m,
     l: $sp-l,
     xl: $sp-xl,
-    xxl: $sp-xxl,
+    2xl: $sp-2xl,
 );
 $breakpoints: (
     xs: $xs,

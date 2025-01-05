@@ -56,11 +56,11 @@ body {
     font-family: $font-sans;
     color: var(--color-text-weak);
     text-rendering: optimizeLegibility;
-    font-size: $txt-3;
+    font-size: $txt-s;
     line-height: $lh-m;
 
     @media screen and (min-width: $md) {
-        font-size: $txt-4;
+        font-size: $txt-m;
     }
 }
 
@@ -74,73 +74,73 @@ h6 {
     color: var(--color-text-strong);
     line-height: $lh-s;
     margin-bottom: $sp-s;
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 h1,
 .h1 {
-    font-size: $txt-8;
+    font-size: $txt-3xl;
 
     @media screen and (min-width: $md) {
-        font-size: $txt-9;
+        font-size: $txt-4xl;
     }
 
     @media screen and (min-width: $lg) {
-        font-size: $txt-10;
+        font-size: $txt-5xl;
     }
 }
 
 h2,
 .h2 {
-    font-size: $txt-6;
+    font-size: $txt-2xl;
 
     @media screen and (min-width: $md) {
-        font-size: $txt-7;
+        font-size: $txt-3xl;
     }
 
     @media screen and (min-width: $lg) {
-        font-size: $txt-8;
+        font-size: $txt-4xl;
     }
 }
 
 h3,
 .h3 {
-    font-size: $txt-5;
+    font-size: $txt-xl;
 
     @media screen and (min-width: $md) {
-        font-size: $txt-6;
+        font-size: $txt-2xl;
     }
 
     @media screen and (min-width: $lg) {
-        font-size: $txt-7;
+        font-size: $txt-3xl;
     }
 }
 
 h4,
 .h4 {
-    font-size: $txt-4;
+    font-size: $txt-l;
 
     @media screen and (min-width: $md) {
-        font-size: $txt-5;
+        font-size: $txt-xl;
     }
 
     @media screen and (min-width: $lg) {
-        font-size: $txt-6;
+        font-size: $txt-2xl;
     }
 }
 
 h5,
 .h5 {
-    font-size: $txt-4;
+    font-size: $txt-m;
 
     @media screen and (min-width: $lg) {
-        font-size: $txt-5;
+        font-size: $txt-l;
     }
 }
 
 h6,
 .h6 {
-    font-size: $txt-4;
+    font-size: $txt-m;
 }
 
 p {
