@@ -1,5 +1,3 @@
-// TODO: Choose and tweak better base colors
-// TODO: Tweak dark mode colors
 :root {
     --color-background: #{$grey-0};
 
@@ -31,17 +29,22 @@
     --color-error-stroke-weak: #{$red-4};
     --color-error-fill: #{$red-1};
 
-    .dark {
-        --color-background: #{$blue-9};
-        --color-brand: #{$blue-7};
-        --color-brand-dark: #{$blue-8};
-        --color-brand-light: #{$blue-6};
-        --color-text-strong: #{$grey-9};
-        --color-text-weak: #{$grey-8};
-        --color-stroke-strong: #{$grey-6};
-        --color-stroke-weak: #{$grey-4};
-        --color-fill: #{$grey-1};
-    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    // :root,
+    // .dark {
+    //     --color-background: #{$blue-10};
+    //     --color-brand: #{$blue-7};
+    //     --color-brand-dark: #{$blue-8};
+    //     --color-brand-light: #{$blue-6};
+    //     --color-text-strong: #{$grey-1};
+    //     --color-text-weak: #{$grey-2};
+    //     --color-stroke-strong: #{$grey-4};
+    //     --color-stroke-weak: #{$grey-7};
+    //     --color-fill: #{$grey-9};
+    // }
 }
 
 /**********************
@@ -201,6 +204,11 @@ ul,
 ol {
     margin: $sp-m 0;
     padding-left: $sp-l;
+
+    &.naked {
+        list-style: none;
+        padding: 0;
+    }
 }
 
 embed,
