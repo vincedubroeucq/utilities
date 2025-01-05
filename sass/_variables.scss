@@ -77,13 +77,6 @@ $txt-3xl: 2.5rem; // 40px
 $txt-4xl: 3rem; // 48px
 $txt-5xl: 3.75rem; // 60px
 
-$lh-0: 0;
-$lh-1: 1;
-$lh-s: 1.2;
-$lh-m: 1.5;
-$lh-l: 1.75;
-$lh-xl: 2;
-
 $sp-2xs: .25rem; // 4px 
 $sp-xs: .5rem; // 8px
 $sp-s: 1rem; // 16px
@@ -95,6 +88,21 @@ $sp-2xl: 5rem; // 80px
 $font-sans: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
 $font-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif';
 $font-mono: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+
+$radius-s: 4px;
+$radius-m: 8px;
+$radius-l: 16px;
+
+$shadow-s: 0px 2px 4px 0px var(--color-stroke-weak);
+$shadow-m: 0px 4px 6px 2px var(--color-stroke-weak);
+$shadow-l: 0px 6px 8px 4px var(--color-stroke-weak);
+
+$lh-0: 0;
+$lh-1: 1;
+$lh-s: 1.2;
+$lh-m: 1.6;
+$lh-l: 1.75;
+$lh-xl: 2;
 
 $greys: (
     grey-1: $grey-1,
@@ -233,6 +241,16 @@ $paddings: (
     l: $sp-l,
     xl: $sp-xl,
     2xl: $sp-2xl,
+);
+$radiuses: (
+    s: $radius-s,
+    m: $radius-m,
+    l: $radius-l,
+);
+$shadows: (
+    s: $shadow-s,
+    m: $shadow-m,
+    l: $shadow-l,
 );
 $breakpoints: (
     xs: $xs,

@@ -161,7 +161,7 @@
 ********************/
 @include spacing-helper('padding', 'p', $paddings);
 @include spacing-helper('margin', 'm', $margins);
-@include spacing-helper('gap', 'gap', $paddings);
+@include helper('gap', 'gap-', $paddings);
 
 /*******************
   Sizing
@@ -184,26 +184,5 @@
 	border: 1px solid var(--color-stroke-strong);
 }
 
-.radius-s {
-	border-radius: 4px;
-}
-
-.radius-m {
-	border-radius: 8px;
-}
-
-.radius-l {
-	border-radius: 16px;
-}
-
-.shadow-s {
-	box-shadow: 0px 2px 4px 0px var(--color-stroke-weak);
-}
-
-.shadow-m {
-	box-shadow: 0px 4px 6px 2px var(--color-stroke-weak);
-}
-
-.shadow-l {
-	box-shadow: 0px 6px 8px 4px var(--color-stroke-weak);
-}
+@include helper('border-radius', 'radius-', $radiuses);
+@include helper('box-shadow', 'shadow-', $shadows);

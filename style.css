@@ -34,11 +34,12 @@ html {
 
 body {
   background-color: var(--color-background);
-  font-family: "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
   color: var(--color-text-weak);
-  text-rendering: optimizeLegibility;
+  font-family: "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin: 0;
+  text-rendering: optimizeLegibility;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -54,6 +55,7 @@ h5,
 h6 {
   clear: both;
   color: var(--color-text-strong);
+  letter-spacing: -1px;
   line-height: 1.2;
   margin-bottom: 1rem;
   margin-top: 1em;
@@ -149,11 +151,14 @@ p {
 }
 
 blockquote {
-  border-left: 4px solid #6b7280;
+  border-top: 8px solid var(--color-brand);
+  border-bottom: 8px solid var(--color-brand);
+  border-radius: 4px;
   padding: 1.5rem;
   margin: 1.5rem 0;
 }
 blockquote cite {
+  display: block;
   text-align: right;
 }
 
@@ -200,6 +205,12 @@ ul,
 ol {
   margin: 1.5rem 0;
   padding-left: 2rem;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin: 0.5rem 0;
 }
 ul.naked,
 ol.naked {
@@ -443,7 +454,7 @@ a.naked:hover, a.naked:focus, a.naked:active {
 }
 
 .lh-m {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .lh-l {
@@ -1158,240 +1169,32 @@ a.naked:hover, a.naked:focus, a.naked:active {
   gap: 0;
 }
 
-.gapb-0 {
-  gap-bottom: 0;
-}
-
-.gapl-0 {
-  gap-left: 0;
-}
-
-.gapr-0 {
-  gap-right: 0;
-}
-
-.gapt-0 {
-  gap-top: 0;
-}
-
-.gapx-0 {
-  gap-left: 0;
-  gap-right: 0;
-}
-
-.gapy-0 {
-  gap-bottom: 0;
-  gap-top: 0;
-}
-
 .gap-2xs {
   gap: 0.25rem;
-}
-
-.gapb-2xs {
-  gap-bottom: 0.25rem;
-}
-
-.gapl-2xs {
-  gap-left: 0.25rem;
-}
-
-.gapr-2xs {
-  gap-right: 0.25rem;
-}
-
-.gapt-2xs {
-  gap-top: 0.25rem;
-}
-
-.gapx-2xs {
-  gap-left: 0.25rem;
-  gap-right: 0.25rem;
-}
-
-.gapy-2xs {
-  gap-bottom: 0.25rem;
-  gap-top: 0.25rem;
 }
 
 .gap-xs {
   gap: 0.5rem;
 }
 
-.gapb-xs {
-  gap-bottom: 0.5rem;
-}
-
-.gapl-xs {
-  gap-left: 0.5rem;
-}
-
-.gapr-xs {
-  gap-right: 0.5rem;
-}
-
-.gapt-xs {
-  gap-top: 0.5rem;
-}
-
-.gapx-xs {
-  gap-left: 0.5rem;
-  gap-right: 0.5rem;
-}
-
-.gapy-xs {
-  gap-bottom: 0.5rem;
-  gap-top: 0.5rem;
-}
-
 .gap-s {
   gap: 1rem;
-}
-
-.gapb-s {
-  gap-bottom: 1rem;
-}
-
-.gapl-s {
-  gap-left: 1rem;
-}
-
-.gapr-s {
-  gap-right: 1rem;
-}
-
-.gapt-s {
-  gap-top: 1rem;
-}
-
-.gapx-s {
-  gap-left: 1rem;
-  gap-right: 1rem;
-}
-
-.gapy-s {
-  gap-bottom: 1rem;
-  gap-top: 1rem;
 }
 
 .gap-m {
   gap: 1.5rem;
 }
 
-.gapb-m {
-  gap-bottom: 1.5rem;
-}
-
-.gapl-m {
-  gap-left: 1.5rem;
-}
-
-.gapr-m {
-  gap-right: 1.5rem;
-}
-
-.gapt-m {
-  gap-top: 1.5rem;
-}
-
-.gapx-m {
-  gap-left: 1.5rem;
-  gap-right: 1.5rem;
-}
-
-.gapy-m {
-  gap-bottom: 1.5rem;
-  gap-top: 1.5rem;
-}
-
 .gap-l {
   gap: 2rem;
-}
-
-.gapb-l {
-  gap-bottom: 2rem;
-}
-
-.gapl-l {
-  gap-left: 2rem;
-}
-
-.gapr-l {
-  gap-right: 2rem;
-}
-
-.gapt-l {
-  gap-top: 2rem;
-}
-
-.gapx-l {
-  gap-left: 2rem;
-  gap-right: 2rem;
-}
-
-.gapy-l {
-  gap-bottom: 2rem;
-  gap-top: 2rem;
 }
 
 .gap-xl {
   gap: 3rem;
 }
 
-.gapb-xl {
-  gap-bottom: 3rem;
-}
-
-.gapl-xl {
-  gap-left: 3rem;
-}
-
-.gapr-xl {
-  gap-right: 3rem;
-}
-
-.gapt-xl {
-  gap-top: 3rem;
-}
-
-.gapx-xl {
-  gap-left: 3rem;
-  gap-right: 3rem;
-}
-
-.gapy-xl {
-  gap-bottom: 3rem;
-  gap-top: 3rem;
-}
-
 .gap-2xl {
   gap: 5rem;
-}
-
-.gapb-2xl {
-  gap-bottom: 5rem;
-}
-
-.gapl-2xl {
-  gap-left: 5rem;
-}
-
-.gapr-2xl {
-  gap-right: 5rem;
-}
-
-.gapt-2xl {
-  gap-top: 5rem;
-}
-
-.gapx-2xl {
-  gap-left: 5rem;
-  gap-right: 5rem;
-}
-
-.gapy-2xl {
-  gap-bottom: 5rem;
-  gap-top: 5rem;
 }
 
 /*******************
