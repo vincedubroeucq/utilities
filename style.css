@@ -28,12 +28,24 @@
 /**********************
   HTML element styles 
 **********************/
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-background);
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
   color: var(--color-text-weak);
   font-family: "system-ui", "BlinkMacSystemFont", "-apple-system", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif";
   font-size: 0.875rem;
@@ -42,7 +54,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 @media screen and (min-width: 768px) {
-  body {
+  body,
+button,
+input,
+select,
+optgroup,
+textarea {
     font-size: 1.0625rem;
   }
 }
@@ -151,8 +168,8 @@ p {
 }
 
 blockquote {
-  border-top: 8px solid var(--color-brand);
-  border-bottom: 8px solid var(--color-brand);
+  border-top: 4px solid var(--color-stroke-weak);
+  border-bottom: 4px solid var(--color-stroke-weak);
   border-radius: 4px;
   padding: 1.5rem;
   margin: 1.5rem 0;
@@ -167,12 +184,19 @@ address {
 }
 
 pre {
+  background-color: var(--color-fill);
   font-family: "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace";
+  font-size: 13px;
   line-height: 1.2;
   margin-bottom: 1.5rem;
   max-width: 100%;
   overflow: auto;
   padding: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  pre {
+    font-size: 16px;
+  }
 }
 
 code,
@@ -238,22 +262,143 @@ svg {
 
 a {
   color: var(--color-brand);
-  transition: all 0.25s ease-in-out;
+  transition: all 0.2s ease-out;
 }
 a:hover, a:focus, a:active {
   color: var(--color-brand-light);
 }
-a:focus {
-  outline: thin dotted var(--color-brand);
+a:hover {
+  text-decoration: none;
 }
-a:hover, a:active {
-  outline: 0;
+a:focus {
+  outline: 2px solid var(--color-brand);
 }
 a.naked {
   text-decoration: none;
 }
 a.naked:hover, a.naked:focus, a.naked:active {
   color: var(--color-brand-light);
+}
+
+input,
+select,
+button,
+textarea {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-stroke-strong);
+  border-radius: 4px;
+  line-height: 1.6;
+  min-height: 47px;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.2s ease-out;
+  outline-offset: 2px;
+}
+input:hover, input:focus,
+select:hover,
+select:focus,
+button:hover,
+button:focus,
+textarea:hover,
+textarea:focus {
+  border-color: var(--color-text-weak);
+  box-shadow: 0px 2px 4px 0px var(--color-stroke-weak);
+}
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: 2px solid var(--color-text-weak);
+}
+
+input[type=checkbox],
+input[type=radio] {
+  border: 2px solid red;
+  min-height: auto;
+  height: 1.0625rem;
+  padding: 0.5rem;
+  width: 1.0625rem;
+}
+input[type=checkbox]:hover, input[type=checkbox]:focus,
+input[type=radio]:hover,
+input[type=radio]:focus {
+  box-shadow: none;
+}
+
+fieldset {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-stroke-strong);
+  border-radius: 4px;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+textarea {
+  margin-bottom: 1.5rem;
+  max-width: 100%;
+  min-height: 150px;
+  width: 100%;
+}
+textarea:focus {
+  outline: none;
+}
+
+button,
+input[type=submit] {
+  background-color: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-fill);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+button:hover, button:focus,
+input[type=submit]:hover,
+input[type=submit]:focus {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-light);
+}
+button:focus,
+input[type=submit]:focus {
+  outline: 2px solid var(--color-brand-light);
+}
+button:active,
+input[type=submit]:active {
+  background-color: var(--color-brand-dark);
+  border-color: var(--color-brand-dark);
+  outline-color: var(--color-brand-dark);
+}
+button.outline,
+input[type=submit].outline {
+  background-color: transparent;
+  color: var(--color-brand);
+}
+button.outline:hover, button.outline:focus,
+input[type=submit].outline:hover,
+input[type=submit].outline:focus {
+  border-color: var(--color-brand-light);
+  color: var(--color-brand-light);
+}
+button.outline:active,
+input[type=submit].outline:active {
+  border-color: var(--color-brand-dark);
+  outline-color: var(--color-brand-dark);
+}
+button.naked,
+input[type=submit].naked {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+button.naked:hover, button.naked:focus,
+input[type=submit].naked:hover,
+input[type=submit].naked:focus {
+  color: var(--color-brand-light);
+  box-shadow: none;
+}
+button.naked:active,
+input[type=submit].naked:active {
+  color: var(--color-brand-dark);
 }
 
 /*******************
@@ -337,6 +482,10 @@ a.naked:hover, a.naked:focus, a.naked:active {
 
 .align-end {
   align-items: flex-end;
+}
+
+.align-baseline {
+  align-items: baseline;
 }
 
 .grid {

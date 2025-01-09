@@ -50,12 +50,24 @@
 /**********************
   HTML element styles 
 **********************/
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--color-background);
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
     color: var(--color-text-weak);
     font-family: $font-sans;
     font-size: $txt-s;
@@ -154,8 +166,8 @@ p {
 }
 
 blockquote {
-    border-top: 8px solid var(--color-brand);
-    border-bottom: 8px solid var(--color-brand);
+    border-top: 4px solid var(--color-stroke-weak);
+    border-bottom: 4px solid var(--color-stroke-weak);
     border-radius: $radius-s;
     padding: $sp-m;
     margin: $sp-m 0;
@@ -171,12 +183,18 @@ address {
 }
 
 pre {
+    background-color: var(--color-fill);
     font-family: $font-mono;
+    font-size: 13px;
     line-height: $lh-s;
     margin-bottom: $sp-m;
     max-width: 100%;
     overflow: auto;
     padding: $sp-m;
+
+    @media screen and (min-width: $md) {
+        font-size: 16px;
+    }
 }
 
 code,
@@ -241,7 +259,7 @@ svg {
 
 a {
     color: var(--color-brand);
-    transition: all .25s ease-in-out;
+    transition: all .2s ease-out;
 
     &:hover,
     &:focus,
@@ -249,13 +267,12 @@ a {
         color: var(--color-brand-light);
     }
 
-    &:focus {
-        outline: thin dotted var(--color-brand);
+    &:hover {
+        text-decoration: none;
     }
 
-    &:hover,
-    &:active {
-        outline: 0;
+    &:focus {
+        outline: 2px solid var(--color-brand);
     }
 
     &.naked {
@@ -265,6 +282,123 @@ a {
         &:focus,
         &:active {
             color: var(--color-brand-light);
+        }
+    }
+}
+
+input,
+select,
+button,
+textarea {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-stroke-strong);
+    border-radius: $radius-s;
+    line-height: $lh-m;
+    min-height: 47px;
+    padding: $sp-xs $sp-s;
+    transition: border-color .2s ease-out;
+    outline-offset: 2px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--color-text-weak);
+        box-shadow: $shadow-s;
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-text-weak);
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    // appearance: none;
+    border: 2px solid red;
+    min-height: auto;
+    height: $txt-m;
+    padding: $sp-xs;
+    width: $txt-m;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+fieldset {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-stroke-strong);
+    border-radius: $radius-s;
+    margin: 0 0 $sp-m;
+    padding: $sp-xs $sp-s;
+}
+
+textarea {
+    margin-bottom: $sp-m;
+    max-width: 100%;
+    min-height: 150px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button,
+input[type="submit"] {
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-fill);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color .2s ease-out, border-color .2s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-brand-light);
+        border-color: var(--color-brand-light);
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-brand-light);
+    }
+
+    &:active {
+        background-color: var(--color-brand-dark);
+        border-color: var(--color-brand-dark);
+        outline-color: var(--color-brand-dark);
+    }
+
+    &.outline {
+        background-color: transparent;
+        color: var(--color-brand);
+
+        &:hover,
+        &:focus {
+            border-color: var(--color-brand-light);
+            color: var(--color-brand-light);
+        }
+
+        &:active {
+            border-color: var(--color-brand-dark);
+            outline-color: var(--color-brand-dark);
+        }
+    }
+
+    &.naked {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--color-brand);
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: var(--color-brand-light);
+            box-shadow: none;
+        }
+
+        &:active {
+            color: var(--color-brand-dark);
         }
     }
 }
