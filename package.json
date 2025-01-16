@@ -4,8 +4,8 @@
   "description": "Set of Sass files with basic styles and utility classes",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch sass/style.scss:style.css",
-    "build": "sass --style=compressed sass/style.scss:style.css",
+    "start": "sass --watch assets/sass/style.scss:assets/css/style.css",
+    "build": "sass --style=compressed assets/sass/style.scss:assets/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

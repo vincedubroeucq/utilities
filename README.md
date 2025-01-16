@@ -19,3 +19,7 @@ Alternatively you can `@import` the `style.scss` file into your existing Sass pi
 Lastly, a pregenerated `style.css` file is provided to help you quickstart a project or just experiment !
 
 Have fun !
+
+## Credits
+
+Zondicons: https://www.zondicons.com/
