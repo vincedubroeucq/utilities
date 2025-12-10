@@ -1,0 +1,26 @@
+{
+  "name": "utilities",
+  "version": "1.0.0",
+  "description": "Set of Sass files with basic styles and utility classes",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch assets/sass/style.scss:assets/css/style.css",
+    "build": "sass --style=compressed assets/sass/style.scss:assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincedubroeucq/utilities.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "utilities"
+  ],
+  "author": "Vincent Dubroeucq",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/vincedubroeucq/utilities/issues"
+  },
+  "homepage": "https://github.com/vincedubroeucq/utilities#readme"
+}

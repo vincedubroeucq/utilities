@@ -1,0 +1,262 @@
+$grey-10: #030712;
+$grey-9: #111827;
+$grey-8: #1f2937;
+$grey-7: #374151;
+$grey-6: #4b5563;
+$grey-5: #6b7280;
+$grey-4: #9ca3af;
+$grey-3: #d1d5db;
+$grey-2: #e5e7eb;
+$grey-1: #f3f4f6;
+$grey-0: #f9fafb;
+
+$blue-10: #172554;
+$blue-9: #1e3a8a;
+$blue-8: #1e40af;
+$blue-7: #1d4ed8;
+$blue-6: #2563eb;
+$blue-5: #3b82f6;
+$blue-4: #60a5fa;
+$blue-3: #93c5fd;
+$blue-2: #bfdbfe;
+$blue-1: #dbeafe;
+$blue-0: #eff6ff;
+
+$red-10: #450a0a;
+$red-9: #7f1d1d;
+$red-8: #991b1b;
+$red-7: #b91c1c;
+$red-6: #dc2626;
+$red-5: #ef4444;
+$red-4: #f87171;
+$red-3: #fca5a5;
+$red-2: #fecaca;
+$red-1: #fee2e2;
+$red-0: #fef2f2;
+
+$green-10: #052e16;
+$green-9: #14532d;
+$green-8: #166534;
+$green-7: #15803d;
+$green-6: #16a34a;
+$green-5: #22c55e;
+$green-4: #4ade80;
+$green-3: #86efac;
+$green-2: #bbf7d0;
+$green-1: #dcfce7;
+$green-0: #f0fdf4;
+
+$amber-10: #451a03;
+$amber-9: #78350f;
+$amber-8: #92400e;
+$amber-7: #b45309;
+$amber-6: #d97706;
+$amber-5: #f59e0b;
+$amber-4: #fbbf24;
+$amber-3: #fcd34d;
+$amber-2: #fde68a;
+$amber-1: #fef3c7;
+$amber-0: #fffbeb;
+
+$xs: 375px;
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1600px;
+$content: 650px;
+
+$txt-2xs: .625rem; // 10px
+$txt-xs: .75rem; // 12px
+$txt-s: .875rem; // 14px
+$txt-m: 1.0625rem; // 17px
+$txt-l: 1.25rem; // 20px
+$txt-xl: 1.5rem; // 24px
+$txt-2xl: 2rem; // 32px
+$txt-3xl: 2.5rem; // 40px
+$txt-4xl: 3rem; // 48px
+$txt-5xl: 3.75rem; // 60px
+
+$sp-2xs: .25rem; // 4px 
+$sp-xs: .5rem; // 8px
+$sp-s: 1rem; // 16px
+$sp-m: 1.5rem; // 24px
+$sp-l: 2rem; // 32px
+$sp-xl: 3rem; // 48px  
+$sp-2xl: 5rem; // 80px
+
+$font-sans: 'system-ui', 'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif';
+$font-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif';
+$font-mono: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+
+$radius-s: 4px;
+$radius-m: 8px;
+$radius-l: 16px;
+
+$shadow-s: 0px 2px 4px 0px var(--color-stroke-weak);
+$shadow-m: 0px 4px 6px 2px var(--color-stroke-weak);
+$shadow-l: 0px 6px 8px 4px var(--color-stroke-weak);
+
+$lh-0: 0;
+$lh-1: 1;
+$lh-s: 1.2;
+$lh-m: 1.6;
+$lh-l: 1.75;
+$lh-xl: 2;
+
+$greys: (
+    grey-1: $grey-1,
+    grey-2: $grey-2,
+    grey-3: $grey-3,
+    grey-4: $grey-4,
+    grey-5: $grey-5,
+    grey-6: $grey-6,
+    grey-7: $grey-7,
+    grey-8: $grey-8,
+    grey-9: $grey-9,
+    grey-10: $grey-10,
+);
+$blues: (
+    blue-1: $blue-1,
+    blue-2: $blue-2,
+    blue-3: $blue-3,
+    blue-4: $blue-4,
+    blue-5: $blue-5,
+    blue-6: $blue-6,
+    blue-7: $blue-7,
+    blue-8: $blue-8,
+    blue-9: $blue-9,
+    blue-10: $blue-10,
+);
+$reds: (
+    red-1: $red-1,
+    red-2: $red-2,
+    red-3: $red-3,
+    red-4: $red-4,
+    red-5: $red-5,
+    red-6: $red-6,
+    red-7: $red-7,
+    red-8: $red-8,
+    red-9: $red-9,
+    red-10: $red-10,
+);
+$greens: (
+    green-1: $green-1,
+    green-2: $green-2,
+    green-3: $green-3,
+    green-4: $green-4,
+    green-5: $green-5,
+    green-6: $green-6,
+    green-7: $green-7,
+    green-8: $green-8,
+    green-9: $green-9,
+    green-10: $green-10,
+);
+$ambers: (
+    amber-1: $amber-1,
+    amber-2: $amber-2,
+    amber-3: $amber-3,
+    amber-4: $amber-4,
+    amber-5: $amber-5,
+    amber-6: $amber-6,
+    amber-7: $amber-7,
+    amber-8: $amber-8,
+    amber-9: $amber-9,
+    amber-10: $amber-10,
+);
+$colors: (
+    brand: var(--color-brand),
+    brand-light: var(--color-brand-light),
+    brand-dark: var(--color-brand-dark),
+
+    text-strong: var(--color-text-strong),
+    text-weak: var(--color-text-weak),
+    stroke-strong: var(--color-stroke-strong),
+    stroke-weak: var(--color-stroke-weak),
+    fill: var(--color-fill),
+
+    success-text-strong: var(--color-success-text-strong),
+    success-text-weak: var(--color-success-text-weak),
+    success-stroke-strong: var(--color-success-stroke-strong),
+    success-stroke-weak: var(--color-success-stroke-weak),
+    success-fill: var(--color-success-fill),
+
+    warning-text-strong: var(--color-warning-text-strong),
+    warning-text-weak: var(--color-warning-text-weak),
+    warning-stroke-strong: var(--color-warning-stroke-strong),
+    warning-stroke-weak: var(--color-warning-stroke-weak),
+    warning-fill: var(--color-warning-fill),
+
+    error-text-strong: var(--color-error-text-strong),
+    error-text-weak: var(--color-error-text-weak),
+    error-stroke-strong: var(--color-error-stroke-strong),
+    error-stroke-weak: var(--color-error-stroke-weak),
+    error-fill: var(--color-error-fill),
+);
+$widths: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+    xxl: $xxl,
+    content: $content,
+);
+$line-heights: (
+    0: $lh-0,
+    1: $lh-1,
+    s: $lh-s,
+    m: $lh-m,
+    l: $lh-l
+);
+$text-sizes: (
+    2xs: $txt-2xs,
+    xs: $txt-xs,
+    s: $txt-s,
+    m: $txt-m,
+    l: $txt-l,
+    xl: $txt-xl,
+    2xl: $txt-2xl,
+    3xl: $txt-3xl,
+    4xl: $txt-4xl,
+    5xl: $txt-5xl,
+);
+$margins: (
+    0: 0,
+    2xs: $sp-2xs,
+    xs: $sp-xs,
+    s: $sp-s,
+    m: $sp-m,
+    l: $sp-l,
+    xl: $sp-xl,
+    2xl: $sp-2xl,
+    auto: auto,
+);
+$paddings: (
+    0: 0,
+    2xs: $sp-2xs,
+    xs: $sp-xs,
+    s: $sp-s,
+    m: $sp-m,
+    l: $sp-l,
+    xl: $sp-xl,
+    2xl: $sp-2xl,
+);
+$radiuses: (
+    s: $radius-s,
+    m: $radius-m,
+    l: $radius-l,
+);
+$shadows: (
+    s: $shadow-s,
+    m: $shadow-m,
+    l: $shadow-l,
+);
+$breakpoints: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+    xxl: $xxl
+);

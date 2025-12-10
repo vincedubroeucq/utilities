@@ -9,13 +9,17 @@ Simply clone the repo or download the zip, and add the Sass files to your Sass f
 Generate the utilities using the standard Sass commands. See [https://sass-lang.com](https://sass-lang.com/) for information about Sass.
 
 ```
-sass --watch {sass_source_folder}/utilities.scss:{css_destination_folder}/utilities.css
+sass --watch {sass_source_folder}/style.scss:{css_destination_folder}/style.css
 ```
 
 Then include the generated CSS file in your HTML.
 
-Alternatively you can `@import` the `utilities.scss` file into your existing Sass pipeline.
+Alternatively you can `@import` the `style.scss` file into your existing Sass pipeline.
 
-Lastly, a pregenerated `utilities.css` file is provided to help you quickstart a project or just experiment !
+Lastly, a pregenerated `style.css` file is provided to help you quickstart a project or just experiment !
 
 Have fun !
+
+## Credits
+
+Zondicons: https://www.zondicons.com/

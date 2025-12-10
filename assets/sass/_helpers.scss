@@ -1,0 +1,195 @@
+@use "mixins";
+@use "variables";
+
+/*******************
+  Layout
+********************/
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.flex {
+	display: flex;
+}
+
+.inline-flex {
+	display: inline-flex
+}
+
+.flex-nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.align-start {
+	align-items: flex-start;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.align-baseline {
+	align-items: baseline;
+}
+
+.grid {
+	display: grid;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+/*******************
+  Accessibility
+********************/
+.sr-text {
+	border-width: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/*******************
+  Text 
+********************/
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+@include mixins.helper('font-size', 'txt-', variables.$text-sizes);
+@include mixins.helper('line-height', 'lh-', variables.$line-heights);
+
+/*******************
+  Colors
+********************/
+.white {
+	color: #fff;
+}
+
+@include mixins.helper('color', '', variables.$colors );
+@include mixins.helper('background-color', 'bg-', variables.$colors );
+
+/*******************
+  Spacing
+********************/
+@include mixins.spacing-helper('padding', 'p', variables.$paddings);
+@include mixins.spacing-helper('margin', 'm', variables.$margins);
+@include mixins.helper('gap', 'gap-', variables.$paddings);
+
+/*******************
+  Sizing
+********************/
+.h-100 {
+	height: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+@include mixins.helper('max-width', 'maxw-', variables.$widths);
+@include mixins.helper('min-width', 'minw-', variables.$widths);
+
+/**********************
+  Borders and shadows
+***********************/
+.border {
+	border: 1px solid var(--color-stroke-strong);
+}
+
+@include mixins.helper('border-radius', 'radius-', variables.$radiuses);
+@include mixins.helper('box-shadow', 'shadow-', variables.$shadows);

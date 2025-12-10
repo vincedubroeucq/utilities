@@ -1,0 +1,428 @@
+@use "variables";
+
+:root {
+    --color-background: #{variables.$grey-0};
+
+    --color-brand: #{variables.$blue-7};
+    --color-brand-dark: #{variables.$blue-8};
+    --color-brand-light: #{variables.$blue-6};
+
+    --color-text-strong: #{variables.$grey-9};
+    --color-text-weak: #{variables.$grey-7};
+    --color-stroke-strong: #{variables.$grey-5};
+    --color-stroke-weak: #{variables.$grey-4};
+    --color-fill: #{variables.$grey-1};
+
+    --color-success-text-strong: #{variables.$green-9};
+    --color-success-text-weak: #{variables.$green-7};
+    --color-success-stroke-strong: #{variables.$green-5};
+    --color-success-stroke-weak: #{variables.$green-4};
+    --color-success-fill: #{variables.$green-1};
+
+    --color-warning-text-strong: #{variables.$amber-9};
+    --color-warning-text-weak: #{variables.$amber-7};
+    --color-warning-stroke-strong: #{variables.$amber-5};
+    --color-warning-stroke-weak: #{variables.$amber-4};
+    --color-warning-fill: #{variables.$amber-1};
+
+    --color-error-text-strong: #{variables.$red-9};
+    --color-error-text-weak: #{variables.$red-7};
+    --color-error-stroke-strong: #{variables.$red-5};
+    --color-error-stroke-weak: #{variables.$red-4};
+    --color-error-fill: #{variables.$red-1};
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    // :root,
+    // .dark {
+    //     --color-background: #{$blue-10};
+    //     --color-brand: #{$blue-7};
+    //     --color-brand-dark: #{$blue-8};
+    //     --color-brand-light: #{$blue-6};
+    //     --color-text-strong: #{$grey-1};
+    //     --color-text-weak: #{$grey-2};
+    //     --color-stroke-strong: #{$grey-4};
+    //     --color-stroke-weak: #{$grey-7};
+    //     --color-fill: #{$grey-9};
+    // }
+}
+
+/**********************
+  HTML element styles 
+**********************/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: var(--color-text-weak);
+    font-family: variables.$font-sans;
+    font-size: variables.$txt-s;
+    line-height: variables.$lh-m;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: variables.$txt-m;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    color: var(--color-text-strong);
+    letter-spacing: -1px;
+    line-height: variables.$lh-s;
+    margin-bottom: variables.$sp-s;
+    margin-top: 1em;
+}
+
+h1,
+.h1 {
+    font-size: variables.$txt-3xl;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: variables.$txt-4xl;
+    }
+
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-5xl;
+    }
+}
+
+h2,
+.h2 {
+    font-size: variables.$txt-2xl;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: variables.$txt-3xl;
+    }
+
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-4xl;
+    }
+}
+
+h3,
+.h3 {
+    font-size: variables.$txt-xl;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: variables.$txt-2xl;
+    }
+
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-3xl;
+    }
+}
+
+h4,
+.h4 {
+    font-size: variables.$txt-l;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: variables.$txt-xl;
+    }
+
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-2xl;
+    }
+}
+
+h5,
+.h5 {
+    font-size: variables.$txt-m;
+
+    @media screen and (min-width: variables.$lg) {
+        font-size: variables.$txt-l;
+    }
+}
+
+h6,
+.h6 {
+    font-size: variables.$txt-m;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: variables.$sp-m;
+}
+
+blockquote {
+    border-top: 4px solid var(--color-stroke-weak);
+    border-bottom: 4px solid var(--color-stroke-weak);
+    border-radius: variables.$radius-s;
+    padding: variables.$sp-m;
+    margin: variables.$sp-m 0;
+
+    cite {
+        display: block;
+        text-align: right;
+    }
+}
+
+address {
+    margin-bottom: variables.$sp-m;
+}
+
+pre {
+    background-color: var(--color-fill);
+    font-family: variables.$font-mono;
+    font-size: 13px;
+    line-height: variables.$lh-s;
+    margin-bottom: variables.$sp-m;
+    max-width: 100%;
+    overflow: auto;
+    padding: variables.$sp-m;
+
+    @media screen and (min-width: variables.$md) {
+        font-size: 16px;
+    }
+}
+
+code,
+kbd,
+tt,
+var {
+    font-family: variables.$font-mono;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted var(--color-stroke-strong);
+    cursor: help;
+}
+
+mark,
+ins {
+    background: var(--color-fill);
+    text-decoration: none;
+}
+
+hr {
+    background-color: var(--color-stroke-weak);
+    border: 0;
+    height: 1px;
+    margin: variables.$sp-m 0;
+}
+
+ul,
+ol {
+    margin: variables.$sp-m 0;
+    padding-left: variables.$sp-l;
+
+    ul,
+    ol {
+        margin: variables.$sp-xs 0;
+    }
+
+    &.naked {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+embed,
+iframe,
+object,
+video {
+    display: block;
+    max-width: 100%;
+    margin: variables.$sp-l auto;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+svg {
+    fill: currentColor;
+
+    &.icon {
+        height: variables.$txt-m;
+        width: variables.$txt-m;
+    }
+}
+
+a {
+    color: var(--color-brand);
+    transition: all .2s ease-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--color-brand-light);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-brand);
+    }
+
+    &.naked {
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--color-brand-light);
+        }
+    }
+}
+
+input,
+select,
+button,
+textarea {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-stroke-strong);
+    border-radius: variables.$radius-s;
+    line-height: variables.$lh-m;
+    min-height: 48px;
+    padding: variables.$sp-xs variables.$sp-s;
+    transition: border-color .2s ease-out;
+    outline-offset: 2px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--color-text-weak);
+        box-shadow: variables.$shadow-s;
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-text-weak);
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    // appearance: none;
+    border: 2px solid red;
+    min-height: auto;
+    height: variables.$txt-m;
+    padding: variables.$sp-xs;
+    width: variables.$txt-m;
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+fieldset {
+    background-color: var(--color-background);
+    border: 2px solid var(--color-stroke-strong);
+    border-radius: variables.$radius-s;
+    margin: 0 0 variables.$sp-m;
+    padding: variables.$sp-xs variables.$sp-s;
+}
+
+textarea {
+    margin-bottom: variables.$sp-m;
+    max-width: 100%;
+    min-height: 150px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button,
+input[type="submit"] {
+    align-items: center;
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-fill);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: bold;
+    transition: background-color .2s ease-out, border-color .2s ease-out;
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-brand-light);
+        border-color: var(--color-brand-light);
+    }
+
+    &:focus {
+        outline: 2px solid var(--color-brand-light);
+    }
+
+    &:active {
+        background-color: var(--color-brand-dark);
+        border-color: var(--color-brand-dark);
+        outline-color: var(--color-brand-dark);
+    }
+
+    &.outline {
+        background-color: transparent;
+        color: var(--color-brand);
+
+        &:hover,
+        &:focus {
+            border-color: var(--color-brand-light);
+            color: var(--color-brand-light);
+        }
+
+        &:active {
+            border-color: var(--color-brand-dark);
+            outline-color: var(--color-brand-dark);
+        }
+    }
+
+    &.naked {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--color-brand);
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: var(--color-brand-light);
+            box-shadow: none;
+            text-decoration: none;
+        }
+
+        &:active {
+            color: var(--color-brand-dark);
+        }
+    }
+
+    &.small {
+        padding: variables.$sp-2xs variables.$sp-xs;
+        min-height: 0;
+    }
+
+    &.large {
+        padding: variables.$sp-s variables.$sp-m;
+    }
+
+    &.icon {
+        padding: variables.$sp-xs variables.$sp-xs;
+        min-height: 0;
+    }
+}
