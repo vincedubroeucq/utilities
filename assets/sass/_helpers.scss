@@ -1,3 +1,6 @@
+@use "mixins";
+@use "variables";
+
 /*******************
   Layout
 ********************/
@@ -147,8 +150,8 @@
 	text-align: right;
 }
 
-@include helper('font-size', 'txt-', $text-sizes);
-@include helper('line-height', 'lh-', $line-heights);
+@include mixins.helper('font-size', 'txt-', variables.$text-sizes);
+@include mixins.helper('line-height', 'lh-', variables.$line-heights);
 
 /*******************
   Colors
@@ -157,15 +160,15 @@
 	color: #fff;
 }
 
-@include helper('color', '', $colors );
-@include helper('background-color', 'bg-', $colors );
+@include mixins.helper('color', '', variables.$colors );
+@include mixins.helper('background-color', 'bg-', variables.$colors );
 
 /*******************
   Spacing
 ********************/
-@include spacing-helper('padding', 'p', $paddings);
-@include spacing-helper('margin', 'm', $margins);
-@include helper('gap', 'gap-', $paddings);
+@include mixins.spacing-helper('padding', 'p', variables.$paddings);
+@include mixins.spacing-helper('margin', 'm', variables.$margins);
+@include mixins.helper('gap', 'gap-', variables.$paddings);
 
 /*******************
   Sizing
@@ -178,8 +181,8 @@
 	width: 100%;
 }
 
-@include helper('max-width', 'maxw-', $widths);
-@include helper('min-width', 'minw-', $widths);
+@include mixins.helper('max-width', 'maxw-', variables.$widths);
+@include mixins.helper('min-width', 'minw-', variables.$widths);
 
 /**********************
   Borders and shadows
@@ -188,5 +191,5 @@
 	border: 1px solid var(--color-stroke-strong);
 }
 
-@include helper('border-radius', 'radius-', $radiuses);
-@include helper('box-shadow', 'shadow-', $shadows);
+@include mixins.helper('border-radius', 'radius-', variables.$radiuses);
+@include mixins.helper('box-shadow', 'shadow-', variables.$shadows);

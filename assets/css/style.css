@@ -55,11 +55,11 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   body,
-button,
-input,
-select,
-optgroup,
-textarea {
+  button,
+  input,
+  select,
+  optgroup,
+  textarea {
     font-size: 1.0625rem;
   }
 }
@@ -84,13 +84,13 @@ h1,
 }
 @media screen and (min-width: 768px) {
   h1,
-.h1 {
+  .h1 {
     font-size: 3rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h1,
-.h1 {
+  .h1 {
     font-size: 3.75rem;
   }
 }
@@ -101,13 +101,13 @@ h2,
 }
 @media screen and (min-width: 768px) {
   h2,
-.h2 {
+  .h2 {
     font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h2,
-.h2 {
+  .h2 {
     font-size: 3rem;
   }
 }
@@ -118,13 +118,13 @@ h3,
 }
 @media screen and (min-width: 768px) {
   h3,
-.h3 {
+  .h3 {
     font-size: 2rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h3,
-.h3 {
+  .h3 {
     font-size: 2.5rem;
   }
 }
@@ -135,13 +135,13 @@ h4,
 }
 @media screen and (min-width: 768px) {
   h4,
-.h4 {
+  .h4 {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
   h4,
-.h4 {
+  .h4 {
     font-size: 2rem;
   }
 }
@@ -152,7 +152,7 @@ h5,
 }
 @media screen and (min-width: 1024px) {
   h5,
-.h5 {
+  .h5 {
     font-size: 1.25rem;
   }
 }
